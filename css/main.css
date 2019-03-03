@@ -7,28 +7,33 @@ body{
 	/*width: 1300px;*/
 	padding: 0;
 	margin:0;
+	background-image: url(../img/landscape-mountains-nature-lake.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center;
 }
 p,div,img,a,h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
 }
 html{overflow-y: hidden;}
+html{overflow-x: hidden;}
 .main-container{
 	padding-left:20px; 
 	padding-right:20px; 
-	width: 100vw;
-	height: 100vh;
+	/*width: 100%;
+	height: 100vh;*/
 	/*border:5px solid lime;*/
 	
-	background-image: url(../img/landscape-mountains-nature-lake.jpg);
+	/*background-image: url(../img/landscape-mountains-nature-lake.jpg);
 	background-repeat: no-repeat;
 	background-size: cover; 
-	background-position: center;
-	
+	background-position: top center;*/
+	padding-top: 55px;
 
 }
 .main-menu{
-	width:97%;
+	width:95%;
 	height: 50px;
 	/*border:1px solid red;*/
 	background: #fff;
@@ -38,7 +43,11 @@ html{overflow-y: hidden;}
 	justify-content: space-between;
 	align-items: center;
 	font-size: 14px;
+	margin-left: 25px;
 	/*flex-wrap:wrap;*/
+	-webkit-box-shadow: 0px 5px 70px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 70px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 5px 70px -5px rgba(0,0,0,0.75);
 }
 .menu-items{
 	/*border:1px solid red;*/
@@ -134,7 +143,7 @@ outline: none;
 	align-items: center;
 	justify-content: space-around;
 	
-	padding-top: 100px;
+	/*padding-top: 100px;*/
 }
 .climbo{
 	font-size:50px;
@@ -175,6 +184,37 @@ outline: none;
 .mobile-menu, .mobile{
 		display: none;
 	}
+	.footer-block{
+		position: relative;
+		/*border:1px solid red;*/
+		/*width: 100px;
+		height: 100px;*/
+		bottom: 150px;
+		margin-left: 25px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.picture-block img{
+		padding-right: 5px;
+	}
+	/*.text{
+		display: flex;
+		justify-content: space-between;
+	}*/
+.text{
+	margin-right: 55px;
+}
+	.text img{
+	width: 15px;
+	margin-top: 5px;
+	position: relative;
+	bottom: -2px;
+	right: 8px;
+	}
+	.text span{
+		color:#fff;
+	}
 /*.btn-go p{
 	padding-left:17px;
 	padding-top:4px;
@@ -211,14 +251,15 @@ outline: none;
 }
 @media screen and (max-width: 768px){
 	.main-content{
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 
-.main-menu, .main-content{
+.main-menu, .main-content, .footer-block{
 	display: none;
 }
 .mobile, .mobile-menu{
 		display: block;
+
 	}
 }
 @media screen and (max-width: 576px){
@@ -231,7 +272,7 @@ outline: none;
 	/*.mobile{
 		display: block;
 	}*/
-	.mobile-menu{
+	.mobile-menu, .footer-block{
 	display: none;
 }
 }
